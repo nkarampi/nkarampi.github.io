@@ -1,0 +1,22 @@
+body{
+    background: black;
+}
+
+#intro > .title {
+  font-size: 50px;
+  font-weight: 200;
+}
+
+#intro > .title:after {
+  width: 650px;
+  background-color: #e83951;
+  border-color: #e83951;
+  height: 4px;
+  border-radius: 6px;
+  margin: 16px auto 8px auto;
+}
+
+.social > .social-element > ion-icon {
+  color: white;
+  font-size: 2em;
+}
