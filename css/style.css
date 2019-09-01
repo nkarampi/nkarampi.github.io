@@ -62,3 +62,34 @@ h1:after {
   display: inline-block;
   line-height: 1em;
 }
+
+@media screen and (max-width: 660px) {
+  #intro {
+    margin: 0 auto;
+  }
+  #intro .title {
+    font-size: 32px;
+  }
+
+  #intro > .social {
+    display: none;
+  }
+
+  #bottom {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 0 20px;
+    width: 100%;
+    text-align: center;
+  }
+
+  #bottom > .social {
+    margin-top: 0;
+  }
+
+  #bottom > .social .social-element {
+    font-size: 2.5em;
+    margin: 4px;
+  }
+}

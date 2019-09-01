@@ -11,7 +11,7 @@ $(document).ready(function() {
 });
 
 /**
- * 
+ *
  */
 function initAnimations() {
   // Wrap every letter in a span
@@ -40,5 +40,12 @@ function initAnimations() {
       duration: 800,
       offset: "-=600",
       delay: (el, i) => 150 + 25 * i
+    })
+    .add({
+      targets: "#bottom .social",
+      scaleX: [0, 1],
+      opacity: [0.5, 1],
+      easing: "easeInOutExpo",
+      duration: 900
     });
 }
