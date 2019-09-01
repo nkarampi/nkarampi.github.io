@@ -1,22 +1,63 @@
-body{
-    background: black;
+* {
+  font-family: "Red Hat Text", sans-serif !important;
+}
+
+body {
+  background: black;
 }
 
 #intro > .title {
-  font-size: 50px;
+  font-size: 62px;
   font-weight: 200;
 }
 
-#intro > .title:after {
-  width: 650px;
-  background-color: #e83951;
-  border-color: #e83951;
-  height: 4px;
-  border-radius: 6px;
-  margin: 16px auto 8px auto;
+h1{
+  text-transform: none;
 }
 
-.social > .social-element > ion-icon {
+h1:after {
+  display: none;
+}
+
+.social > .social-element {
+  text-decoration: none;
   color: white;
   font-size: 2em;
+}
+
+.social > .social-element:hover {
+  color: #5cbdaa;
+}
+
+.social {
+  margin-top: 16px;
+}
+
+.ml14 {
+  font-weight: 200;
+  font-size: 3.2em;
+}
+
+.ml14 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+}
+
+.ml14 .line {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #fff;
+  transform-origin: 100% 100%;
+  bottom: 0;
+}
+
+.ml14 .letter {
+  display: inline-block;
+  line-height: 1em;
 }
