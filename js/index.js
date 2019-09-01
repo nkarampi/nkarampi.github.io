@@ -1,7 +1,7 @@
 $(document).ready(function() {
   particleground(document.getElementById("particles"), {
     dotColor: "#5cbdaa",
-    lineColor: "#5cbdaa"
+    lineColor: "#076956"
   });
 
   var intro = $("#intro")[0];

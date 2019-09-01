@@ -11,7 +11,7 @@ body {
   font-weight: 200;
 }
 
-h1{
+h1 {
   text-transform: none;
 }
 
@@ -23,10 +23,11 @@ h1:after {
   text-decoration: none;
   color: white;
   font-size: 2em;
+  transition: 300ms;
 }
 
 .social > .social-element:hover {
-  color: #5cbdaa;
+  color: #25e8c2;
 }
 
 .social {
@@ -52,7 +53,7 @@ h1:after {
   left: 0;
   height: 2px;
   width: 100%;
-  background-color: #fff;
+  background-color: red;
   transform-origin: 100% 100%;
   bottom: 0;
 }
