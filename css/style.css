@@ -6,6 +6,10 @@ body {
   background: black;
 }
 
+#particles {
+  display: none;
+}
+
 #intro > .title {
   font-size: 62px;
   font-weight: 200;

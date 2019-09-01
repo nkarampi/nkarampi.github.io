@@ -1,4 +1,6 @@
 $(document).ready(function() {
+  $("#particles").show();
+
   particleground(document.getElementById("particles"), {
     dotColor: "#5cbdaa",
     lineColor: "#076956"
