@@ -3,11 +3,11 @@ $(document).ready(function() {
 
   particleground(document.getElementById("particles"), {
     dotColor: "#5cbdaa",
-    lineColor: "#076956"
+    lineColor: "#076956",
+    density: 7000
   });
 
-  var intro = $("#intro")[0];
-  intro.style.marginTop = -intro.offsetHeight / 2 + "px";
+  $("#intro")[0].style.marginTop = -intro.offsetHeight / 2 + "px";
 
   initAnimations();
 });
@@ -45,9 +45,9 @@ function initAnimations() {
     })
     .add({
       targets: "#bottom .social",
-      scaleX: [0, 1],
+      scaleY: [0, 1],
       opacity: [0.5, 1],
       easing: "easeInOutExpo",
-      duration: 900
+      duration: 900,
     });
 }

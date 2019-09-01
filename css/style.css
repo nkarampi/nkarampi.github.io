@@ -4,6 +4,7 @@
 
 body {
   background: black;
+  overflow: hidden;
 }
 
 #particles {
@@ -72,7 +73,7 @@ h1:after {
     margin: 0 auto;
   }
   #intro .title {
-    font-size: 32px;
+    font-size: 30px;
   }
 
   #intro > .social {
