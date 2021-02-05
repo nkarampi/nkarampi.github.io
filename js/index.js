@@ -78,6 +78,7 @@ function initToggler() {
 
       if (isFancy()) {
         $('#fancy-intro').hide();
+        document.getElementById('image-fixed').src = '';
         $('#intro').fadeIn();
       } else {
         $('#intro').hide();
