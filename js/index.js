@@ -125,6 +125,8 @@ function randomizeSocialElements() {
       'top': getRandomArbitrary(-170, 0),
       'right': getRandomArbitrary(-140 + i * 50, 140 - (i + 1) * 50 )
     });
+    const animation = `MoveUpDown ${i * 0.2 + 1}s linear infinite`;
+    $($('#fancy-intro-social-container a')[i]).css('animation', animation);
   })
 }
 

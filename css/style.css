@@ -164,6 +164,15 @@ h1:after {
   padding: 20px 140px;
 }
 
+@keyframes MoveUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
 @media screen and (max-width: 660px) {
   #intro {
     margin: 0 auto;
