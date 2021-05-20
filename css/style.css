@@ -11,6 +11,10 @@ body {
   background: white;
 }
 
+.background--white .my-info .reading {
+  color: black;
+}
+
 #particles {
   display: none;
 }
@@ -138,6 +142,45 @@ h1:after {
   transform-origin: 130% 115%;
   transition: 1.5s cubic-bezier(0.68, -0.15, 0.265, 1.35);
 }
+
+.my-info {
+  z-index: 10001;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.my-info .reading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.my-info .reading p {
+  margin: 0;
+  padding-right: 8px;
+}
+
+#gr_grid_widget_1621508696 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#gr_grid_widget_1621508696 > div > div > a > img {
+  -webkit-box-shadow: 3px 2px 14px 2px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow: 3px 2px 14px 2px #ccc;  /* Firefox 3.5 - 3.6 */
+  box-shadow: 3px 2px 14px 2px #ccc;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+
 .toggle-btn--on {
   transition: 1.5s cubic-bezier(0.68, -0.15, 0.265, 1.35);
   transform: rotate(-357deg);
@@ -218,6 +261,16 @@ h1:after {
 
   .toggler {
     top: 0;
+  }
+
+  .my-info {
+    top: 0;
+    bottom: unset;
+    font-size: 14px;
+  }
+
+  #gr_grid_widget_1621508696 > div > div > a > img {
+    height: 120px;
   }
 }
 

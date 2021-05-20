@@ -4,6 +4,8 @@ $(document).ready(function () {
 
 function init() {
   initToggler();
+  initReading();
+  redirectGoodreadLink();
   
   $('#intro')[0].style.marginTop = -intro.offsetHeight / 2 + 'px';
   
@@ -84,20 +86,34 @@ function initToggler() {
         $('#intro').hide();
         document.getElementById('image-fixed').src = 'assets/images/tenor.gif';
         $('#fancy-intro').fadeIn();
-
-        // $()
       }
       createSocialElements();
     }, 200);
   });
 }
 
+function initReading() {
+  $('#reading-button').on('click', function () {
+    if (showingReading()) {
+      $('#gr_grid_widget_1621508696').hide();
+    } else {
+      $('#gr_grid_widget_1621508696').fadeIn();
+    }
+  });
+}
+
+function redirectGoodreadLink() {
+  $('#gr_grid_widget_1621508696 a').on('click', function (event) {
+    event.preventDefault();
+    var url = $(this).attr('href');
+    console.log(url);
+    window.open(url, '_blank').focus();
+  });
+}
+
 function createSocialElements() {
   const html = `<a class="social-element" target="_blank" href="https://github.com/nkarampi">
     <span class="fab fa-github"></span>
-  </a>
-  <a class="social-element" target="_blank" href="https://gitlab.com/nkarampi">
-    <span class="fab fa-gitlab"></span>
   </a>
   <a class="social-element" target="_blank" href="https://www.linkedin.com/in/nikolaos-karampinas/">
     <span class="fab fa-linkedin"></span>
@@ -155,4 +171,8 @@ function isNight() {
 
 function isFancy() {
   return $('#fancy-intro').is(':visible');
+}
+
+function showingReading() {
+  return $('#gr_grid_widget_1621508696').is(':visible');
 }
